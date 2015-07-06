@@ -1,0 +1,18 @@
+{
+  "name": "Hatchet NoTube",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "description": "Hides the YouTube player window on hatchet.is",
+  "content_scripts": [
+    {
+        "matches": [
+        "http://*.hatchet.is/*","https://*.hatchet.is/*"],
+        "js": ["main.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }
+  ],
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+             "128": "icon128.png" }
+}
