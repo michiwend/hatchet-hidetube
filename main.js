@@ -5,7 +5,7 @@ function hidePlayer(){
     catch(err) {
         return
     }
-    console.log('YOUTUBE WINDOW HIDDEN');
+    console.log('YOUTUBE PLAYER HIDDEN');
     document.removeEventListener('DOMSubtreeModified', hidePlayer)
 }
 
